@@ -1,4 +1,7 @@
 {% extends "govuk_template.html" %}
+{% set global_header_text = "DWP Digital" %}
+{% set logo_link_title = "https://dwpdigital.blog.gov.uk" %}
+{% set homepage_url = "https://dwpdigital.blog.gov.uk/" %}
 
 {% block head %}
   {% include "includes/head.html" %}
@@ -12,7 +15,6 @@
 
   <div class="header-proposition">
     <div class="content">
-      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
       <nav id="proposition-menu">
         <a href="/" id="proposition-name">
           {# Set serviceName in config.js. Use a block to override on a page. #}
